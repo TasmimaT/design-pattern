@@ -5,12 +5,12 @@ The Private Class Data Pattern addresses the issue a class may have, concerning 
 
 ### Discussion :
 
-A class may expose its attributes (class variables) to manipulation when manipulation is no longer desirable after construction. Using the private class data design pattern prevents that undesirable manipulation.A class may have one-time mutable attributes that cannot be declared final. This design pattern allows one-time setting of these class attributes.
+A class may expose its attributes (class variables) to manipulation when manipulation is no longer desirable after construction.The undesirable manipulation can be prevented by using the private class data design pattern.A class may have one-time mutable attributes that cannot be declared final. This design pattern allows one-time setting of these class attributes.
 The motivation for this design pattern comes from the design goal of protecting class state by minimizing the visibility of its attributes (data).
 
 The private class data design pattern  reduces expose of attributes by limiting their visibility.
 
-It reduces the number of class attributes by encapsulating them in single Data object. It allows the class designer to remove write privilege of attributes that are intended to be set only during construction, even from methods of the target class.
+It reduces the number of class attributes by encapsulating them in single Data object. It allows the class designer to remove writing privileges of attributes that are intended to be set only during construction, even from methods of the target class.
 
 
 ### Structure:
@@ -29,7 +29,7 @@ The consequences of using this design pattern include the following:
 
 ### Implementation :
 
-The private class data design pattern solves the problems above by extracting a data class for the target class and giving the target class instance an instance of the extracted data class.
+The private class data design pattern solves the problems above by extracting a data class for the target class and  by giving the target class instance an instance of the extracted data class.
 
    * The data class exposes each attribute (variable or property) through a getter.
    * The data class exposes each attribute and that must changes after construction through a setter.
