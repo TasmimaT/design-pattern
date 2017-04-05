@@ -44,7 +44,7 @@ The following C# code illustrates an opportunity to use the private class data d
 
 The attributes radius, color, and origin above should not change after the Circle() constructor. Note that the visibility is already limited by scoping them as private, but Circle can still modify them by using those methods.
 
-The excess exposure of the attributes creates a way of (undesirable) coupling between methods that access those attributes. To reduce the visibility of the attributes and thus reduce the coupling, implement the private class data design pattern, as follows:
+The excess exposure of the attributes creates a way of (undesirable) coupling between methods that access those attributes. It also creates a way To reduce the visibility of the attributes, coupling, implement the private class data design pattern, as follows:
 
 ![private3](https://cloud.githubusercontent.com/assets/25974121/24420933/72ad158e-13a9-11e7-8b3f-c5c60b63d6cc.PNG)
 ![private4](https://cloud.githubusercontent.com/assets/25974121/24421058/cb8f1d64-13a9-11e7-98f3-9fe456bae4a3.PNG)
